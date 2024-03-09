@@ -1,0 +1,8 @@
+<button
+  class="tile_button"
+  [ngClass]="{
+    'tile_button_X': value === 'X',
+    'tile_button_O': value === 'O',
+    'tile_button_none': value === ''
+  }"
+>{{value}}</button>

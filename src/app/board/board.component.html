@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>Tic Tac Toe</h1>
+
+  <p *ngIf="!winner">Current player {{player}}</p>
+  <p *ngIf="winner">Player {{player}} wins</p>
+
+
+  <div class="board">
+    <app-tile
+      class="board_tile"
+      *ngFor="let val of tiles; let i = index"
+      [value]="val"
+      (click)="handleMove(i)"
+    >
+    </app-tile>
+  </div>
+
+  <button class="btn_reset" (click)="newGame()">Restart</button>
+
+  <div class="victory_counter">
+    <div>
+      <h2>Player X</h2>
+      <span>{{victories.x}}</span>
+    </div>
+
+    <div>
+      <h2>Player O</h2>
+      <span>{{victories.o}}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-gap: 0px;
+  border-radius: 25px;
+  margin: 20px 0;
+}
+
+.board_tile{
+  height: 120px;
+}
+
+.btn_reset{
+  border: 2px solid orangered;
+  border-radius: 5px;
+  color: orangered;
+  padding: 5px 15px;
+}
+
+.btn_reset:hover{
+  border-color: rgb(255, 101, 45);
+  color: rgb(255, 101, 45);
+}
+
+.btn_reset:active{
+  border-color: rgb(201, 54, 0);
+  color: rgb(201, 54, 0);
+}
+
+.victory_counter {
+  display: flex;
+  justify-content: space-around;
+  width: 360px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.victory_counter span {
+  font-size: larger;
+  font-weight: bold;
+}

@@ -1,0 +1,32 @@
+.tile_button {
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.tile_button_X {
+  background-color: #C2F9BB;
+  color: black;
+}
+
+.tile_button_O {
+  background-color: #9AD1D4;
+  color: black;
+}
+
+.tile_button_none {
+  background-color: #CC3363;
+}
+
+.tile_button_none:hover {
+  background-color: #D65C83;
+}
+
+.tile_button_none:active {
+  background-color: #B42D58
+}
+

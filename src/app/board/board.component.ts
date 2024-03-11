@@ -26,8 +26,8 @@ export class BoardComponent implements OnInit {
   handleMove(id: number) {
     if (!this.tiles[id] && !this.winner) {
       this.tiles.splice(id, 1, this.player);
-      this.player = this.player == "X" ? "O" : "X";
       this.winner = this.calcWinner();
+      this.winner ? '' : this.player = this.player == "X" ? "O" : "X";
     }
   }
 
